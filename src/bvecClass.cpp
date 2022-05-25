@@ -174,20 +174,6 @@ void bvec::reset()
   for(int i=0;i<_len;++i) ptr[i]=0;
 }
 
-void bvec::setRnd()
-{
-  uint_fast64_t rndval;
-  for(int i=_len-1,j=0;i!=-1;--i,--j){
-    if(j==0){
-      #pragma omp critical
-        rndval=myrnd.getrndul();
-      j=64;
-    }
-    ptr[i]=rndval&1;
-    rndval>>=1;
-  }
-}
-
 void bvec::setulong(unsigned int val)
 {
   int l=_len;

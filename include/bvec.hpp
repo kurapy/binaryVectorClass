@@ -2,7 +2,6 @@
 #include <bitset>
 #include <initializer_list>
 
-#include "RndClass.hpp"
 
 #ifndef THROW_ERROR
 #define THROW_EEEOR
@@ -97,7 +96,7 @@ public:
   //0埋め
   void reset();
 
-  //0or1 ランダム埋め
+  //0or1 ランダム埋め(not implemented)
   void setRnd();
 
   //uint to bvec
