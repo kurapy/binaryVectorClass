@@ -1,10 +1,9 @@
-#ifndef BVECCLASS
-#define BVECCLSSS
-
 #include "../include/bvec.hpp"
 
 #include <iostream>
 #include <bitset>
+#include <initializer_list>
+#include <memory>
 
 //ここからソースコード
 
@@ -279,4 +278,3 @@ unsigned char bvec::getHex(const int i)
   }
   return c;
 }
-#endif

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <bitset>
 #include <initializer_list>
+#include <memory>
 
 
 #ifndef THROW_ERROR
