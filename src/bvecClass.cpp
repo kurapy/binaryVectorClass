@@ -152,7 +152,6 @@ void rem(bvec& q, const bvec& a, const bvec& b)
   return;
 }
 
-
 bool innnerproduct(bool& x,const bvec& a,const bvec& b)
 {
   int n=a.len();
